@@ -6,13 +6,16 @@ public class Evolution {
     public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in); 
 
+        //The program will ask if you want a tundra or a jungle and then will automatically make two dogs and two lava monsters.
+
+        //There will be loops that take into account the temperature of the biome and the chances that are implemented from the interface.
+
     }
 
     class World {
 
         //world data
-        ArrayList<List<String>> totalExistingCreatures = new ArrayList<List<String>>();
-        //change to hashmap
+        HashMap<Integer, Creature> HashtotalExistingCreatures = new HashMap<Integer, Creature>();
 
         String biome = new String();
 
@@ -38,7 +41,7 @@ public class Evolution {
 
             }
             else if(creatureName.equals("lava monster")){
-                
+
             }
         }
 
@@ -57,6 +60,8 @@ public class Evolution {
         int remainingLifeSpan;
 
         int chanceToReproduce;
+
+        int creaturId;
 
         public int getRemainingLifeSpan(String creature){
             //place holder
