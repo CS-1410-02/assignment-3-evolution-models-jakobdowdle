@@ -15,11 +15,11 @@ public class Evolution {
     class World {
 
         //world data
-        HashMap<Integer, Creature> HashtotalExistingCreatures = new HashMap<Integer, Creature>();
+        public HashMap<Integer, Creature> HashtotalExistingCreatures = new HashMap<Integer, Creature>();
 
-        String biome = new String();
+        private String biome = new String();
 
-        int temperature;
+        private int temperature;
 
         public void createBiome(String name){
 
@@ -68,11 +68,11 @@ public class Evolution {
             return 1;
         }
 
-        public void die(){
+        private void die(){
 
         }
 
-        public void reproduce(){
+        private void reproduce(){
 
         }
 
